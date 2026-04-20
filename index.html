@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       rel="icon"
@@ -12,133 +12,152 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <div>
-        <div>
-          <div>
-            <img src="./images/image-jeremy.png" alt="" />
+      <div class="user-timeframe-wrapper">
+        <div class="user-timeframe-container">
+          <div class="user-container">
+            <img src="./images/image-jeremy.png" alt="" class="pfp-img" />
 
             <div class="user-info">
-              <p>Report for</p>
+              <p class="sub-heading">Report for</p>
               <h1>Jeremy Robson</h1>
             </div>
           </div>
 
           <div class="timeframe-selector">
-            <p>Daily</p>
-            <p>Weekly</p>
-            <p>Monthly</p>
+            <p class="timeframe active">Daily</p>
+            <p class="timeframe active">Weekly</p>
+            <p class="timeframe active">Monthly</p>
           </div>
         </div>
       </div>
 
       <div class="work-container" data-activity="work">
-        <div class="work-bg"></div>
+        <div class="bg work-bg">
+          <img src="./images/icon-work.svg" alt="" class="work-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Work</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div class="activity-container">
+              <div class="activity-header">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">32hrs</p>
-              <p class="previous">Last Week - 36hrs</p>
+              <div class="activity-stats">
+                <p class="current">32hrs</p>
+                <p class="previous">Last Week - 36hrs</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="play-container" data-activity="play">
-        <div class="play-bg"></div>
+        <div class="bg play-bg">
+          <img src="./images/icon-play.svg" alt="" class="play-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Play</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div>
+              <div class="activity-header">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">10hrs</p>
-              <p class="previous">Last Week - 36hrs</p>
+              <div class="activity-stats">
+                <p class="current">10hrs</p>
+                <p class="previous">Last Week - 36hrs</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="study-container" data-activity="study">
-        <div class="study-bg"></div>
+        <div class="bg study-bg">
+          <img src="./images/icon-study.svg" alt="" class="study-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Study</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div>
+              <div class="activity-header">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">4hrs</p>
-              <p class="previous">Last Week - 7hrs</p>
+              <div class="activity-stats">
+                <p class="current">4hrs</p>
+                <p class="previous">Last Week - 7hrs</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="exercise-container" data-activity="exercise">
-        <div class="exercise-bg"></div>
+        <div class="bg exercise-bg">
+          <img src="./images/icon-exercise.svg" alt="" class="exercise-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Exercise</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div>
+              <div class="activity-header">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">4hrs</p>
-              <p class="previous">Last Week - 5hrs</p>
+              <div class="activity-stats">
+                <p class="current">4hrs</p>
+                <p class="previous">Last Week - 5hrs</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="social-container" data-activity="social">
-        <div class="social-bg"></div>
+        <div class="bg social-bg">
+          <img src="./images/icon-social.svg" alt="" class="social-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Social</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div>
+              <div class="activity-header">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">5hrs</p>
-              <p class="previous">Last Week - 10hrs</p>
+              <div class="activity-stats">
+                <p class="current">5hrs</p>
+                <p class="previous">Last Week - 10hrs</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="selfcare-container" data-activity="selfcare">
-        <div class="selfcare-bg"></div>
+        <div class="bg selfcare-bg">
+          <img src="./images/icon-self-care.svg" alt="" class="selfcare-icon" />
 
-        <div class="activity-bg">
-          <div>
-            <div class="activity-header">
-              <p>Self Care</p>
-              <img src="./images/icon-ellipsis.svg" alt="" />
-            </div>
+          <div class="activity-bg">
+            <div>
+              <div class="activity-header">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
 
-            <div class="activity-stats">
-              <p class="current">2hrs</p>
-              <p class="previous">Last Week - 2hrs</p>
+              <div class="activity-stats">
+                <p class="current">2hrs</p>
+                <p class="previous">Last Week - 2hrs</p>
+              </div>
             </div>
           </div>
         </div>
