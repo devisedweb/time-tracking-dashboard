@@ -60,7 +60,7 @@ body {
 
 .sub-heading,
 .previous {
-  font-style: 0.938rem;
+  font-size: 0.938rem;
   font-weight: 400;
   line-height: 18px;
   color: #bbc0ff;
@@ -212,6 +212,108 @@ main {
 
 .activity-header {
   margin-bottom: 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+
+@media (min-width: 768px) {
+  /* IMAGES */
+
+  .work-icon {
+    width: 57.48px;
+    height: 57.48px;
+    top: -8.04px;
+    left: 117.61px;
+  }
+
+  .play-icon {
+    width: 66.33px;
+    height: 66.33px;
+    top: -10.61px;
+    left: 113.53px;
+  }
+
+  .study-icon {
+    width: 57.48px;
+    height: 57.48px;
+    top: -4.46px;
+    left: 117.94px;
+  }
+
+  .exercise-icon {
+    width: 58.7px;
+    height: 39.41px;
+    top: -0.31px;
+    left: 116.24px;
+  }
+
+  .social-icon {
+    width: 54.24px;
+    height: 73.7px;
+    top: -11.05px;
+    left: 123.79px;
+  }
+
+  .selfcare-icon {
+    width: 53.06px;
+    height: 48.64px;
+    top: -10px;
+    left: 125px;
+  }
+
+  /* TYPOGRAPHY */
+
+  .current {
+    font-size: 3.5rem;
+    line-height: 66px;
+  }
+
+  /* LAYOUT */
+
+  body {
+    align-items: center;
+    height: 100vh;
+  }
+
+  main {
+    max-width: 38.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .user-timeframe-wrapper {
+    grid-column: span 3;
+  }
+
+  .timeframe-selector {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .timeframe {
+    padding: 0 28px;
+  }
+
+  .bg {
+    width: 11.75rem;
+    height: 13.313rem;
+  }
+
+  .activity-bg {
+    top: 36px;
+  }
+
+  .activity-header {
+    margin-bottom: 1rem;
+  }
+
+  .activity-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 /* .attribution {
