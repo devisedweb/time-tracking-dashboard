@@ -6,4 +6,7 @@ fetch("./data.json")
   })
   .then((data) => {
     console.log(data);
+  })
+  .catch((error) => {
+    console.error(`Could not get data: ${error}`);
   });
